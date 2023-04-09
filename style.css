@@ -74,8 +74,8 @@ body {
   animation-delay: 0.7s;
 }
 
-.home-content h3:nth-last-of-type(2) {
-  margin-bottom: 5px;
+.home-content h3:nth-of-type(2) {
+  margin-bottom: 30px;
   animation: slideTop 1s ease forwards;
   animation-delay: 0.7s;
 }
@@ -102,10 +102,10 @@ body {
 
 .home-img img {
   max-width: 450px;
-  margin-right: -50px;
+  margin-right: -20px;
   opacity: 0;
-  animation: zoomin 1s ease forwards, floatImage 4s ease-in-out infinite;
-  animation-delay: 2s;
+  animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
+  animation-delay: 2s, 3s;
 }
 
 .social-media a {
@@ -121,6 +121,7 @@ body {
   color: #0ef;
   text-decoration: none;
   margin: 30px 15px 30px 0;
+  transition: 0.5s ease;
   opacity: 0;
   animation: slideLeft 1s ease forwards;
   animation-delay: calc(0.2s * var(--i));
@@ -197,7 +198,7 @@ body {
   }
 }
 
-@keyframes zoomin {
+@keyframes zoomIn {
   0% {
     transform: scale(0);
     opacity: 0;
